@@ -14,24 +14,13 @@ moves = ["rock", "paper", "scissors"]
 comp_move = moves.sample
 
 if comp_move == "rock"
-  outcome = "tied"
+  @outcome = "tied"
 elsif comp_move == "paper"
-outcome = "lost"
+  @outcome = "lost"
 else comp_move == "scissors"
-  outcome = "won"
+  @outcome = "won"
 end
-"
-<h2>
-We played rock!
-</h2>
 
-<h2>
-They played #{comp_move}!
-</h2>
-
-<h2>
-We #{outcome}!
-</h2>
-"
+erb(:zebra)
 
 end
